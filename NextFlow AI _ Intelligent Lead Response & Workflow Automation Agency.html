@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NextFlow AI | Intelligent Lead Response & Workflow Automation Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--bg:#090D16;--card:rgba(255,255,255,.04);--bd:rgba(0,240,255,.18);--cy:#00F0FF;--pu:#7000FF;--tx:#E8ECF4;--mu:#97A1B5;--ok:#3DDC97;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*:before,*:after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(600px 400px at 85% 5%,rgba(112,0,255,.22),transparent),radial-gradient(500px 400px at 5% 30%,rgba(0,240,255,.1),transparent),linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/48px 48px;animation:grid 30s linear infinite}
+@keyframes grid{to{background-position:0 0,0 0,0 48px,48px 0}}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{line-height:1.12;margin:0 0 .5em;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(2.2rem,5.6vw,4rem)}h2{font-size:clamp(1.7rem,3.6vw,2.6rem)}h3{font-size:1.15rem}
+p{margin:0 0 1em;color:var(--mu);max-width:62ch}
+.wrap{max-width:1140px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+.grad{background:linear-gradient(90deg,var(--cy),var(--pu));-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:var(--card);border:1px solid var(--bd);border-radius:18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:26px;transition:border-color .25s,box-shadow .25s}
+.glass:hover{border-color:var(--cy);box-shadow:0 0 28px rgba(0,240,255,.15)}
+.btn{display:inline-block;border:0;cursor:pointer;font:700 .95rem inherit;font-family:inherit;padding:13px 24px;border-radius:12px;color:#fff;background:linear-gradient(90deg,var(--pu),#3a4bff 60%,var(--cy));box-shadow:0 0 22px rgba(112,0,255,.45);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 0 32px rgba(0,240,255,.5)}
+.btn.ghost{background:transparent;border:1px solid var(--bd);box-shadow:none}
+.btn.ghost:hover{border-color:var(--cy)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(9,13,22,.7);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--bd)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
+.nl{display:flex;gap:26px;font-size:.92rem;color:var(--mu)}.nl a:hover{color:var(--cy)}
+@media(max-width:860px){.nl{display:none}nav .btn{padding:10px 14px;font-size:.82rem}}
+.badge{display:inline-block;border:1px solid var(--bd);background:rgba(0,240,255,.07);padding:7px 16px;border-radius:99px;font-size:.85rem;margin-bottom:22px}
+.hero{padding-top:70px}
+.row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+.flow{margin-top:56px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px}
+.node{text-align:center;padding:20px 14px}.node b{display:block;margin:8px 0 2px}.node small{color:var(--mu)}
+.node .ic{font-size:1.8rem}
+.node.on{border-color:var(--cy);box-shadow:0 0 30px rgba(0,240,255,.35)}
+.arr{width:70px;height:3px;background:rgba(255,255,255,.12);position:relative;border-radius:3px;overflow:hidden}
+.arr:after{content:"";position:absolute;top:0;left:-30%;width:30%;height:100%;background:linear-gradient(90deg,transparent,var(--cy),var(--pu));animation:run 1.8s linear infinite}
+@keyframes run{to{left:100%}}
+@media(max-width:760px){.flow{grid-template-columns:1fr}.arr{width:3px;height:36px;margin:auto}.arr:after{display:none}}
+.two,.four,.three{display:grid;gap:20px}
+.two{grid-template-columns:repeat(2,1fr)}.four{grid-template-columns:repeat(4,1fr)}.three{grid-template-columns:repeat(3,1fr)}
+@media(max-width:980px){.four{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:1fr}}
+@media(max-width:640px){.two,.four{grid-template-columns:1fr}}
+.bad{border-color:rgba(255,90,110,.35)}.bad h3{color:#ff7a8a}.good h3{color:var(--cy)}
+.cmp ul{list-style:none;margin:0;padding:0}.cmp li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06);color:var(--mu)}
+.num{font-weight:800;font-size:1.6rem}
+.sim{display:grid;grid-template-columns:1fr 1.1fr;gap:24px}
+@media(max-width:820px){.sim{grid-template-columns:1fr}}
+label{display:block;font-size:.85rem;color:var(--mu);margin:12px 0 5px}
+input,select,textarea{width:100%;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.14);color:var(--tx);border-radius:10px;padding:12px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--cy)}
+select option{background:#0f1524}
+.phone{background:#0b141a;border-radius:16px;padding:14px;min-height:340px;border:1px solid rgba(255,255,255,.1)}
+.log{font-size:.82rem;color:var(--mu);margin-bottom:10px;min-height:20px}
+.msg{background:#005c4b;border-radius:12px 12px 12px 2px;padding:10px 13px;margin:8px 0;font-size:.88rem;max-width:92%;animation:pop .35s both}
+.msg.pdf{background:#1b2a33}
+.crm{margin-top:10px;font-size:.78rem;width:100%;border-collapse:collapse;animation:pop .35s both}
+.crm td,.crm th{border:1px solid rgba(255,255,255,.14);padding:5px 7px;text-align:left}.crm th{color:var(--cy)}
+@keyframes pop{from{opacity:0;transform:translateY(8px)}}
+.price{display:flex;flex-direction:column}
+.price .amt{font-size:2.2rem;font-weight:800;margin:6px 0}
+.price ul{padding-left:18px;color:var(--mu);flex:1;margin:0 0 20px}
+.price.hot{border-color:var(--pu);box-shadow:0 0 36px rgba(112,0,255,.35)}
+.tag{align-self:flex-start;background:var(--pu);font-size:.75rem;font-weight:700;padding:3px 12px;border-radius:99px;margin-bottom:8px}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(3,6,12,.82);display:none;align-items:center;justify-content:center;padding:16px;overflow-y:auto}
+.modal.open{display:flex}
+.box{background:#0d1322;border:1px solid var(--bd);border-radius:20px;max-width:520px;width:100%;padding:26px;max-height:94vh;overflow-y:auto;position:relative}
+.x{position:absolute;right:14px;top:10px;background:none;border:0;color:var(--mu);font-size:1.7rem;cursor:pointer}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}
+.seg button{background:transparent;border:1px solid var(--bd);color:var(--tx);border-radius:10px;padding:10px;font:600 .9rem inherit;font-family:inherit;cursor:pointer}
+.seg button.on{background:rgba(0,240,255,.12);border-color:var(--cy)}
+.upi{display:flex;gap:8px;align-items:center;justify-content:space-between;background:rgba(0,0,0,.4);border:1px dashed var(--cy);border-radius:10px;padding:10px 12px;font-weight:700;word-break:break-all}
+#qr{background:#fff;padding:10px;border-radius:12px;width:fit-content;margin:14px auto}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ok);color:#04150d;font-weight:700;padding:10px 18px;border-radius:10px;z-index:200;display:none}
+.quick{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+#udone{display:none;text-align:center}#uf.done>*:not(#udone){display:none}#uf.done #udone{display:block;animation:pop .4s both}
+#cdone{display:none;text-align:center}#cf.done>*:not(#cdone){display:none}#cf.done #cdone{display:block;animation:pop .4s both}
+.okbox{border:1px solid var(--ok);background:rgba(61,220,151,.1);border-radius:14px;padding:22px;margin-bottom:18px;box-shadow:0 0 28px rgba(61,220,151,.25)}.okbox h3{color:var(--ok);margin-bottom:6px}.okic{width:46px;height:46px;border-radius:50%;background:var(--ok);color:#04150d;font-size:1.5rem;font-weight:800;display:grid;place-items:center;margin:0 auto 10px}
+footer{border-top:1px solid var(--bd);padding:40px 0;color:var(--mu);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a:hover{color:var(--cy)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style></head>
+<body>
+<nav><div class="wrap">
+ <a href="#top" class="logo"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"><path d="M6 8l9 7-9 7M15 15h10" stroke="url(#g)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="6" cy="8" r="2.6" fill="#00F0FF"/><circle cx="6" cy="22" r="2.6" fill="#7000FF"/><circle cx="25" cy="15" r="2.6" fill="#00F0FF"/><defs><linearGradient id="g"><stop stop-color="#00F0FF"/><stop offset="1" stop-color="#7000FF"/></linearGradient></defs></svg>NextFlow AI</a>
+ <div class="nl"><a href="#solutions">Solutions</a><a href="#demo">Live Demo</a><a href="#pricing">Pricing</a><a href="#why">Why Us</a><a href="#contact">Contact</a></div>
+ <a class="btn" href="#demo">Book 60s Live Demo</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <span class="badge">🚀 Serving Real Estate, Clinics &amp; SMBs in Mumbai &amp; Thane</span>
+ <h1>Turn Incoming Leads Into Paying Clients <span class="grad">in Under 30 Seconds.</span></h1>
+ <p style="font-size:1.1rem">Stop losing 40% of high-intent buyers to slow manual replies. NextFlow AI automates your WhatsApp dispatch, AI lead qualification, and live CRM sync—24/7 without hiring extra staff.</p>
+ <div class="row"><a class="btn" href="#demo">Test Live 30s Demo</a><a class="btn ghost" href="#pricing">View Packages</a></div>
+ <div class="flow" id="flow">
+  <div class="glass node"><div class="ic">📝</div><b>Meta / Google Ad Form</b><small>Lead submits</small></div><div class="arr"></div>
+  <div class="glass node"><div class="ic">🧠</div><b>Gemini AI Scoring</b><small>Budget &amp; intent read</small></div><div class="arr"></div>
+  <div class="glass node"><div class="ic">💬</div><b>Instant WhatsApp Brochure + VIP Sales Alert</b><small>Done in 30s</small></div>
+ </div>
+</div></header>
+
+<section id="why"><div class="wrap rv">
+ <h2>Slow follow-up costs you clients. <span class="grad">Automation fixes it.</span></h2>
+ <div class="two cmp" style="margin-top:28px">
+  <div class="glass bad"><h3>Traditional Manual Follow-up</h3><ul><li>2–4 hours reply delay</li><li>40% lead drop-off</li><li>Copy-paste errors in sheets</li></ul></div>
+  <div class="glass good"><h3>NextFlow AI Pipeline</h3><ul><li>30-second auto-reply</li><li>Smart lead scoring</li><li>Zero human error</li></ul></div>
+ </div>
+</div></section>
+
+<section id="solutions"><div class="wrap rv">
+ <h2>Core solutions</h2>
+ <div class="four" style="margin-top:28px">
+  <div class="glass"><div class="num grad">01</div><h3>Instant 30-Second Lead Dispatch</h3><p>Auto-sends a personalized greeting, PDF brochure, and catalog on WhatsApp &amp; Email the second a form is submitted.</p></div>
+  <div class="glass"><div class="num grad">02</div><h3>AI Lead Qualification (Gemini Engine)</h3><p>Automatically parses inquiry text and budget to separate serious VIP buyers from casual browsers.</p></div>
+  <div class="glass"><div class="num grad">03</div><h3>Live CRM &amp; Google Sheets Sync</h3><p>Real-time, error-free data logging with timestamps and lead tags.</p></div>
+  <div class="glass"><div class="num grad">04</div><h3>Real-Time VIP Sales Alerts</h3><p>Instant call/WhatsApp trigger to the business owner or sales rep when a high-budget lead arrives.</p></div>
+ </div>
+</div></section>
+
+<section id="demo"><div class="wrap rv">
+ <h2>Try it live: <span class="grad">watch a lead flow in seconds</span></h2>
+ <p>Enter details and see the exact WhatsApp message, brochure and CRM entry your customers' leads would trigger. This is a simulation; nothing is sent.</p>
+ <div class="sim glass" style="margin-top:20px">
+  <div>
+   <label for="sn">Name</label><input id="sn" placeholder="Rahul Sharma">
+   <label for="sb">Business type</label><select id="sb"><option>Real Estate</option><option>Clinic</option><option>Interior Design</option><option>Other</option></select>
+   <label for="sp">Phone number</label><input id="sp" type="tel" placeholder="98XXXXXXXX">
+   <button class="btn" id="simBtn" style="margin-top:18px;width:100%">Simulate 30-Sec Lead Flow</button>
+   <p id="simErr" style="color:#ff7a8a;margin:10px 0 0"></p>
+  </div>
+  <div class="phone"><div class="log" id="log">Waiting for a lead…</div><div id="chat"></div></div>
+ </div>
+</div></section>
+
+<section id="pricing"><div class="wrap rv">
+ <h2>Transparent pricing</h2><p>All prices in INR. Pay 50% advance to start, or 100% upfront.</p>
+ <div class="three" style="margin-top:24px">
+  <div class="glass price"><h3>Starter Pipeline Setup</h3><div class="amt">₹12,000</div><small style="color:var(--mu);margin-bottom:12px">One-time</small><ul><li>Form integration</li><li>Make.com / n8n workflow</li><li>Google Sheets live sync</li><li>Instant WhatsApp auto-responder</li></ul><button class="btn pay" data-n="Starter Pipeline Setup" data-a="12000">Pay &amp; Start Now</button></div>
+  <div class="glass price hot"><span class="tag">Most Popular</span><h3>Advanced AI Growth Flow</h3><div class="amt">₹20,000</div><small style="color:var(--mu);margin-bottom:12px">One-time</small><ul><li>Everything in Starter</li><li>Gemini AI lead qualification &amp; scoring</li><li>Dynamic PDF brochure dispatch</li><li>VIP sales team alerts</li></ul><button class="btn pay" data-n="Advanced AI Growth Flow" data-a="20000">Pay &amp; Start Now</button></div>
+  <div class="glass price"><h3>Monthly Maintenance &amp; Retainer</h3><div class="amt">₹5,000</div><small style="color:var(--mu);margin-bottom:12px">Per month</small><ul><li>24/7 webhook uptime monitoring</li><li>API health checks</li><li>Sheet optimization</li><li>Priority tweaks</li></ul><button class="btn pay" data-n="Monthly Maintenance & Retainer" data-a="5000">Pay &amp; Start Now</button></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap rv">
+ <h2>Book a free audit &amp; consultation</h2>
+ <div class="two" style="margin-top:20px">
+  <form class="glass" id="cf">
+   <label for="cn">Name</label><input id="cn" required>
+   <label for="cb">Business name</label><input id="cb" required>
+   <label for="cp">Phone / WhatsApp</label><input id="cp" type="tel" required>
+   <label for="cl">Monthly leads</label><input id="cl" placeholder="e.g. 150" required>
+   <label for="ci">Package interest</label><select id="ci"><option>Starter Pipeline Setup</option><option>Advanced AI Growth Flow</option><option>Monthly Maintenance</option><option>Not sure yet</option></select>
+   <button class="btn" style="margin-top:18px;width:100%">Book my audit</button>
+   <div id="cdone" role="status"><div class="okbox"><div class="okic">✓</div><h3>Audit Request Submitted!</h3><p style="margin:0 auto 10px">Ganesh will contact you within 30 seconds.</p><p class="note" style="display:none;color:#ffcf6b;margin:0 auto;font-size:.85rem">We couldn't reach our system from this page. Tap Open in WhatsApp so Ganesh gets your details.</p></div><div class="quick" style="justify-content:center"><a class="btn" id="cwa" target="_blank" rel="noopener" href="https://wa.me/919324043338">Open in WhatsApp</a><button type="button" class="btn ghost" id="cem">Copy Email: nextflowai.official15@gmail.com</button></div></div>
+  </form>
+  <div class="glass"><h3>Prefer to talk directly?</h3><p>Ganesh Jadhav replies personally. Reach us from Thane &amp; Mumbai, or anywhere in India.</p>
+   <div class="quick"><a class="btn" href="mailto:nextflowai.official15@gmail.com">Email us</a><a class="btn ghost" target="_blank" rel="noopener" href="https://instagram.com/nextflow.systems">Instagram @nextflow.systems</a></div>
+   <p style="margin-top:18px">nextflowai.official15@gmail.com</p></div>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div><div class="logo" style="margin-bottom:8px">NextFlow AI</div>Intelligent Lead Response &amp; Workflow Automation Agency<br>Founder: Ganesh Jadhav<br>Thane &amp; Mumbai, India</div>
+ <div><a href="#solutions">Solutions</a><br><a href="#demo">Live Demo</a><br><a href="#pricing">Pricing</a><br><a href="#contact">Contact</a></div>
+ <div><a href="mailto:nextflowai.official15@gmail.com">nextflowai.official15@gmail.com</a><br><a target="_blank" rel="noopener" href="https://instagram.com/nextflow.systems">@nextflow.systems</a><br>© <span id="yr">2026</span> NextFlow AI. All rights reserved.</div>
+</div></footer>
+
+<div class="modal" id="pm" role="dialog" aria-modal="true" aria-labelledby="pt"><div class="box">
+ <button class="x" id="px" aria-label="Close">×</button>
+ <h3 id="pt">Checkout</h3>
+ <div class="seg"><button data-p="50" class="on">50% Advance</button><button data-p="100">100% Full Payment</button></div>
+ <p style="margin:0 0 10px">Amount to pay: <b id="pa" style="color:var(--cy);font-size:1.3rem"></b></p>
+ <div class="upi"><span id="uid">9324043338@pthdfc</span><button class="btn" id="cp2" style="padding:8px 14px">Copy UPI ID</button></div>
+ <div id="qr"></div>
+ <p style="text-align:center;font-size:.85rem">Scan with any UPI app, or pay to the UPI ID above.</p>
+ <form id="uf"><label for="un">Your name</label><input id="un" required><label for="uph">Your phone / WhatsApp</label><input id="uph" type="tel" required><label for="utr">UTR / Transaction ID</label><input id="utr" required minlength="8">
+  <button class="btn" style="width:100%;margin-top:18px">Confirm Payment &amp; Submit UTR</button><div id="udone" role="status"><div class="okbox"><div class="okic">✓</div><h3>Payment Details Submitted!</h3><p style="margin:0 auto 10px">Ganesh will verify your UTR and contact you within 30 seconds.</p><p class="note" style="display:none;color:#ffcf6b;margin:0 auto;font-size:.85rem">We couldn't reach our system from this page. Tap Open in WhatsApp so Ganesh gets your details.</p></div><div class="quick" style="justify-content:center"><a class="btn" id="uwa" target="_blank" rel="noopener" href="https://wa.me/919324043338">Open in WhatsApp</a><button type="button" class="btn ghost" id="uem">Copy Email (nextflowai.official15@gmail.com)</button></div></div></form>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const EMAIL='nextflowai.official15@gmail.com',UPI='9324043338@pthdfc',WA='919324043338';
+const inr=n=>'₹'+n.toLocaleString('en-IN');
+function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';setTimeout(()=>e.style.display='none',2200)}
+$('#yr').textContent=new Date().getFullYear();
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(e=>io.observe(e));
+// hero flow highlight
+let fi=0;const nodes=$$('#flow .node');setInterval(()=>{nodes.forEach((n,i)=>n.classList.toggle('on',i===fi));fi=(fi+1)%3},1400);
+// simulator
+const wait=ms=>new Promise(r=>setTimeout(r,ms));let busy=false;
+$('#simBtn').onclick=async()=>{
+ if(busy)return;const n=$('#sn').value.trim(),b=$('#sb').value,p=$('#sp').value.trim();
+ if(!n||p.replace(/\D/g,'').length<10){$('#simErr').textContent='Enter your name and a 10-digit phone number to run the simulation.';return}
+ $('#simErr').textContent='';busy=true;$('#simBtn').textContent='Running…';
+ const log=$('#log'),chat=$('#chat');chat.innerHTML='';const t0=Date.now();
+ const stamp=()=>((Date.now()-t0)/1000*4).toFixed(0);
+ log.textContent='⏱ 0s: Form submitted';await wait(900);
+ log.textContent='🧠 6s: Gemini AI scoring your inquiry…';await wait(1200);
+ const vip=b==='Real Estate'||b==='Clinic';
+ log.textContent='🧠 12s: Score '+(vip?'92/100 (VIP buyer)':'71/100 (warm lead)');await wait(900);
+ log.textContent='💬 18s: Sending WhatsApp to +91 '+p;
+ chat.innerHTML+=`<div class="msg">Hi ${n.replace(/</g,'&lt;')}! 👋 Thanks for your ${b.toLowerCase()} enquiry. Our team is on it. Here is your brochure:</div>`;await wait(900);
+ chat.innerHTML+=`<div class="msg pdf">📄 ${b.replace(/ /g,'_')}_Brochure.pdf (2.4 MB)</div>`;await wait(900);
+ log.textContent='📊 24s: Writing to Google Sheets'+(vip?' + alerting sales team':'');
+ chat.innerHTML+=`<table class="crm"><tr><th>Time</th><th>Name</th><th>Type</th><th>Tag</th></tr><tr><td>${new Date().toLocaleTimeString()}</td><td>${n.replace(/</g,'&lt;')}</td><td>${b}</td><td>${vip?'VIP':'Warm'}</td></tr></table>`;
+ if(vip){await wait(700);chat.innerHTML+=`<div class="msg" style="background:#4a2a00">🔔 VIP alert to owner: new high-intent ${b} lead</div>`}
+ await wait(500);log.textContent='✅ 30s: Complete. Lead replied to, scored and logged.';
+ $('#simBtn').textContent='Simulate 30-Sec Lead Flow';busy=false};
+// payment modal
+let pkg={n:'',a:0},pct=50,qr;
+function amt(){return Math.round(pkg.a*pct/100)}
+function renderPay(){
+ $('#pa').textContent=inr(amt());$('#pt').textContent=pkg.n;
+ const url=`upi://pay?pa=${UPI}&pn=NextFlow%20AI&am=${amt()}&cu=INR&tn=${encodeURIComponent(pkg.n)}`;
+ $('#qr').innerHTML='';
+ try{qr=new QRCode($('#qr'),{text:url,width:180,height:180})}catch(e){$('#qr').innerHTML='<a href="'+url+'" style="color:#000">Tap to open UPI app</a>'}}
+$$('.pay').forEach(b=>b.onclick=()=>{pkg={n:b.dataset.n,a:+b.dataset.a};pct=50;$$('.seg button').forEach(x=>x.classList.toggle('on',x.dataset.p==='50'));$('#uf').classList.remove('done');$('#uf').reset();renderPay();$('#pm').classList.add('open')});
+$$('.seg button').forEach(b=>b.onclick=()=>{pct=+b.dataset.p;$$('.seg button').forEach(x=>x.classList.toggle('on',x===b));renderPay()});
+const close=()=>$('#pm').classList.remove('open');
+$('#px').onclick=close;$('#pm').onclick=e=>{if(e.target.id==='pm')close()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+$('#cp2').onclick=()=>{(navigator.clipboard?navigator.clipboard.writeText(UPI):Promise.reject()).then(()=>toast('UPI ID copied')).catch(()=>{const r=document.createRange();r.selectNode($('#uid'));getSelection().removeAllRanges();getSelection().addRange(r);toast('Select and copy the UPI ID')})};
+const HOOK='https://hook.us2.make.com/v98b3vn9ru2jwyzi9kai5d6agkxei4ru';
+async function send(data){const c=new AbortController(),t=setTimeout(()=>c.abort(),8000);try{const r=await fetch(HOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data),signal:c.signal});return r.ok}catch(e){return false}finally{clearTimeout(t)}}
+async function finish(form,waEl,text,data){
+ const b=form.querySelector('button:not([type])'),lab=b.textContent;b.disabled=true;b.textContent='Submitting…';
+ const ok=await send(data);
+ waEl.href=`https://wa.me/${WA}?text=${encodeURIComponent(text)}`;
+ form.querySelector('.note').style.display=ok?'none':'block';
+ form.classList.add('done');b.disabled=false;b.textContent=lab}
+$('#uf').onsubmit=e=>{e.preventDefault();
+ const body=`Payment confirmation\nPackage: ${pkg.n}\nPaid: ${inr(amt())} (${pct===50?'50% advance':'100% full'})\nName: ${$('#un').value}\nPhone: ${$('#uph').value}\nUTR/Transaction ID: ${$('#utr').value}`;
+ const data={form_type:'payment_confirmation',name:$('#un').value,business_name:'',phone:$('#uph').value,monthly_leads:'',package_selected:pkg.n,payment_amount:amt(),utr_number:$('#utr').value,timestamp:new Date().toISOString()};
+ finish($('#uf'),$('#uwa'),body,data)};
+// contact form
+$('#cf').onsubmit=e=>{e.preventDefault();
+ const body=`Name: ${$('#cn').value}\nBusiness: ${$('#cb').value}\nPhone: ${$('#cp').value}\nMonthly leads: ${$('#cl').value}\nInterest: ${$('#ci').value}`;
+ const data={form_type:'audit_request',name:$('#cn').value,business_name:$('#cb').value,phone:$('#cp').value,monthly_leads:$('#cl').value,package_selected:$('#ci').value,payment_amount:'',utr_number:'',timestamp:new Date().toISOString()};
+ finish($('#cf'),$('#cwa'),'Audit request\n'+body,data)};
+$('#uem').onclick=$('#cem').onclick=()=>{const done=()=>toast('Email copied');const fb=()=>{const t=document.createElement('textarea');t.value=EMAIL;document.body.appendChild(t);t.select();try{document.execCommand('copy');done()}catch(e){toast(EMAIL)}t.remove()};navigator.clipboard?navigator.clipboard.writeText(EMAIL).then(done).catch(fb):fb()};
+</script>
+</body></html>
